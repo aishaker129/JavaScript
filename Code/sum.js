@@ -12,7 +12,19 @@ let num2 = parseFloat(prompt());
 
 // using ternary operation
 
-let ans = num1>=num2 ? num1+num2 : Math.abs(num1-num2);
-console.log(ans);
+// let ans = num1>=num2 ? num1+num2 : Math.abs(num1-num2);
+// console.log(ans);
 
+
+// using function
+
+function operation(a,b) {
+    return a>=b ? a+b:Math.abs(a-b);
+}
+
+let a = parseFloat(prompt());
+let b = parseFloat(prompt());
+
+
+console.log(operation(a,b));
 
