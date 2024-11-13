@@ -27,25 +27,36 @@
 // console.log(typeof array);
 // console.log(typeof arr);
 // console.log(Array.isArray(array));
+// console.log(arr.unshift());
 
-const myObj = {
-    name: "John",
-    age: 30,
-    cars: [
-      {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
-      {name:"BMW", models:["320", "X3", "X5"]},
-      {name:"Fiat", models:["500", "Panda"]}
-    ]
-  }
+// const myObj = {
+//     name: "John",
+//     age: 30,
+//     cars: [
+//       {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+//       {name:"BMW", models:["320", "X3", "X5"]},
+//       {name:"Fiat", models:["500", "Panda"]}
+//     ]
+//   }
 
-  console.log(myObj);
+//   console.log(myObj);
   
-  for( let i in myObj.cars){
-    // console.log(myObj.cars.name+" ");
-    for(let j in myObj.cars[i].models){
-        console.log(myObj.cars[i].models[j]+' ');
+//   for( let i in myObj.cars){
+//     // console.log(myObj.cars.name+" ");
+//     for(let j in myObj.cars[i].models){
+//         console.log(myObj.cars[i].models[j]+' ');
         
-    }
-    console.log();
+//     }
+//     console.log();
     
-  }
+//   }
+//   console.log(arr.copyWithin(3,2));
+  
+const arr = [[1,2],[3,4],[5,6]];
+const newarr = arr.flat();
+console.log(newarr);
+
+const myArr = [1, 2, 3, 4, 5, 6];
+const newArr = myArr.flatMap(x => [x, x * 10]);
+console.log(newArr);
+
