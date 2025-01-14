@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello World</h1>
+    <h2>AI Shaker</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quas expedita! Tempore id consequuntur
+        omnis maiores vel reiciendis, atque architecto ipsam, commodi eaque culpa, ea cumque rerum excepturi. Velit
+        beatae illum similique modi voluptatem temporibus ratione porro ad natus. Sunt, praesentium autem aperiam itaque
+        magni sit quisquam numquam earum ea illum quo maxime? Nam rem beatae qui nihil veritatis porro ipsum officiis
+        libero hic pariatur optio nulla expedita repudiandae soluta tempore nesciunt voluptatibus ducimus cum
+        laboriosam, molestias corrupti numquam odio placeat! Provident explicabo exercitationem, non voluptatum earum
+        mollitia nemo praesentium nulla labore adipisci nam corporis iure, vero sapiente, unde necessitatibus?</p>
+    
+    <a id="link" href="">Google</a>
+
+
+    <script>
+        const title = document.querySelector('h1');
+        title.title = "Hello Jupiter";
+        const heading = document.querySelector('h1');
+        heading.setAttribute('id','shaker');
+        heading.id = 'ai';
+        const add = document.querySelector('p');
+        add.setAttribute('id','para');
+
+        if(add.hasAttribute('title')==0){
+            add.title = 'This is Paragraph';
+        }
+
+        const link = document.querySelector('a');
+        link.setAttribute('href','https://google.com');
+        link.style.color = 'red';
+        heading.style.backgroundColor = 'teal';
+        heading.style.color = 'white';
+        heading.style.margin = '20px';
+        heading.style.padding = '20px';
+        let img = document.createElement('img');
+        link.addEventListener('click', function(e){
+        e.preventDefault(); 
+        
+        img.src = './images/pp.png';
+        console.log(img);
+        heading.append(img);
+        img.style.width = '300px';
+        img.style.height = '300px';
+        });
+    </script>
+</body>
+
+</html>

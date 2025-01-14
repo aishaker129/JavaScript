@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>LogIn Page</title>
+</head>
+
+<body>
+    
+    <div class="flex justify-center items-center h-[100vh] mx-auto shadow-2xl">
+        <div class="w-[400px] h-[550px] bg-fuchsia-900 text-white">
+            <div class="pic rounded-full mx-[110px] my-[50px] bg-[url('./images/download.png')] w-[175px] h-[175px]"></div> 
+            <form action="#" class="mx-[50px]">
+                <label for="email" class="text-3xl font-extrabold">Email</label> <br>
+                <input type="email" name="email" class="w-[300px] h-[50px] my-1" id="email" placeholder="  Enter your valid user name" required><br>
+                <label for="pass" class="text-3xl font-extrabold">Password</label> <br>
+                <input type="password" class="w-[300px] h-[50px] my-1" name="pass" id="pass" required> <br>
+                <input type="submit" value="Login" class="w-[200px] h-[50px] rounded-md bg-purple-500 hover:bg-lime-50 hover:text-black my-4 text-2xl font-bold mx-[40px]">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .center-div {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px; /* Align text vertically inside the div */
+    }
+  </style> -->

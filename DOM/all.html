@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Map Elements</title>
+</head>
+<body>
+    <h1>Map Elements</h1>
+    <ul id="mapElements"></ul> <!-- Placeholder for map items -->
+
+    <script>
+        // Create a Map
+        const myMap = new Map([
+            ['name', 'Shaker'],
+            ['age', 25],
+            ['skill', 'Programming']
+        ]);
+
+        // Get the HTML element
+        const list = document.getElementById('mapElements');
+
+        // Add Map elements to the list
+        myMap.forEach((value, key) => {
+            const listItem = document.createElement('li'); // Create a new list item
+            listItem.textContent = `Key: ${key}, Value: ${value}`; // Set the content
+            list.appendChild(listItem); // Add to the list
+        });
+    </script>
+</body>
+</html>

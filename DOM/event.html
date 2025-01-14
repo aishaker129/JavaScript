@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capture Bubbling</title>
+    <style>
+        .grandParent{
+            width: 700px;
+            height: 700px;
+            background-color:brown;
+        }
+        .parent{
+            width: 500px;
+            height: 500px;
+            background-color:chocolate;
+        }
+        .child{
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="grandParent">
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const grand = document.querySelector('.grandParent');
+        const parent = document.querySelector('.parent');
+        const child = document.querySelector('.child');
+        // Capture
+        grand.addEventListener('click',(e)=>{
+            console.log("Grand Parent Capture");
+        },{capture:true});
+
+        parent.addEventListener('click',(e)=>{
+            console.log("Parent Capture");
+        },{capture:true});
+
+        child.addEventListener('click',(e)=>{
+            console.log("Child Capture");
+        },{capture:true});
+        
+        document.addEventListener('click',(e)=>{
+            console.log("Document Capture");
+        },{capture:true});
+
+        // Bubbling
+
+        grand.addEventListener('click',(e)=>{
+            console.log("Grand Parent Bubbling");
+        });
+
+        parent.addEventListener('click',(e)=>{
+            console.log("Parent Bubbling");
+        });
+
+        child.addEventListener('click',(e)=>{
+            console.log("Child Bubbling");
+        });
+        
+        document.addEventListener('click',(e)=>{
+            console.log("Document Bubbling");
+        });
+    </script>
+</body>
+</html>

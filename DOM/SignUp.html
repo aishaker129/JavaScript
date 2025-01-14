@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="flex justify-center items-center h-[100vh] mx-auto shadow-2xl">
+        <div class="w-[600px] h-[750px] bg-fuchsia-900 text-white">
+            <h1 class="text-4xl font-extrabold flex justify-center my-[50px]" id="h">Create an Account</h1>
+            <form action="#" class="mx-[50px]">
+                <label for="fname" id="fname1" class="text-2xl font-extrabold"> First Name</label> <br>
+                <input type="name" class="w-[500px] h-[50px] text-black" name="fname" id="fname" required> <br>
+                <label for="lname" id="lname1" class="text-2xl font-extrabold">Last Name</label> <br>
+                <input type="name" class="w-[500px] h-[50px] text-black" name="lname" id="lname" required> <br>
+                <label for="number" id="number1" class="text-2xl font-extrabold">Phone Number</label> <br>
+                <input type="number" name="number" id="number" class="w-[500px] h-[50px] text-black" name="number" id="number" required> <br>
+                <label for="email" id="email1" class="text-2xl font-extrabold"> Email Address</label> <br>
+                <input type="email" name="email" id="email" class="w-[500px] h-[50px] text-black" name="fname" id="fname" required> <br>
+                <label for="pass" id="pass1" class="text-2xl font-extrabold">Password</label> <br>
+                <input type="password" name="pass" id="pass" required class="w-[500px] h-[50px] text-black" name="fname" id="fname"> <br>
+                <label for="cpass" id="cpass1" class="text-2xl font-extrabold">Confirm Password</label> <br>
+                <input type="password" name="cpass" id="cpass" required class="w-[500px] h-[50px] text-black" name="fname" id="fname"> <br>
+                <input type="submit" value="Sign Up" id="submit" class="w-[300px] h-[60px] rounded-md bg-purple-500 hover:bg-lime-50 hover:text-black my-4 text-2xl font-bold mx-[100px] mt-[20px]">
+            </form>
+        </div>
+    </div>
+    
+
+
+    <script>
+        const l = document.getElementById('submit').addEventListener("click",myfun);
+
+        function myfun(){
+            document.getElementById('h').innerHTML="Successfully signup complete";
+        }
+    </script>
+</body>
+</html>
