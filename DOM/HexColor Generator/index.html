@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="generate">
-            <div class="code"></div>
+    <div id="container" class="bg-[#792be4] h-[860px] flex justify-center items-center">
+        <div class="box">
+            <div id="input" onclick="generator()" class="generate w-[250px] h-[60px] bg-[#da36bc] rounded-md flex justify-center items-center">
+                <button class="text-3xl font-extrabold">Generate Color</button>
+            </div>
+            <div id="output" class="w-[250px] h-[50px] rounded-md bg-white flex justify-center items-center my-5">
+                <p class="text-3xl">#792be4</p>
+            </div>
         </div>
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
